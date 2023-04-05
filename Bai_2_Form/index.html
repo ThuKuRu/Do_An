@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/heart.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="form-sign-up">
+        <h1>Registration</h1>
+        <form name="frmLoginInfo" id="frmLoginInfo" method="post" action="#">
+            <div class="email">
+                <label for="name"><i class="icon-envelope icon "></i></label>
+                <input type="text" name="name" placeholder="Email" required />
+            </div>
+            <div class="name">
+                <label for="name"><i class="icon-user icon"></i></label>
+                <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="address">
+                <label for="name"><i class="icon-map-marker icon"></i></label>
+                <input type="text" name="name" placeholder="Address" required />
+            </div>
+            <div class="gender">
+                Gender
+                <input type="radio" value="None" id="male" name="gender" checked />
+                <label for="male" class="radio">Male</label>
+                <input type="radio" value="None" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+            </div>
+            <div class="calendar">
+                <i class="icon-calendar icon"></i>
+                <input type="date" name="txtDate" id="txtDate" min="2000-01-01" />
+            </div>
+            <div class="upload-img">
+                <label for="name"><i class="icon-picture icon"></i></label>
+                <input type="file" id="imageFile" onchange="ImageFileURL()">
+                <div id = "displayImg">
+
+                </div>
+            </div>
+
+            <a href="#" class="button">Register</a>
+        </form>
+    </div>
+    <script>
+        function ImageFileURL() {
+            var fileSelected = document.getElementById('imageFile').files;
+            if(fileSelected.length > 0){
+                var fileToLoad = fileSelected[0];
+                var fileReader = new FileReader();
+                fileReader.onload = function(fileLoaderEvent){
+                    var srcData = fileLoaderEvent.target.result;
+                    var newImage = document.createElement('img');
+                    newImage.src = srcData;
+                    document.getElementById('displayImg').innerHTML = newImage.outerHTML;
+                    document.getElementsByClassName('button')[0].style.marginTop = '70px';
+                }
+                fileReader.readAsDataURL(fileToLoad);
+            }
+        }
+    </script>
+</body>
+
+</html>
