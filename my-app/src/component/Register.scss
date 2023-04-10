@@ -1,0 +1,107 @@
+.container{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 174, 174);
+    text-align: center;
+    .form-container{
+        width: 550px;
+        padding: 50px;
+        box-shadow: 0px 0px 21px rgb(0 0 0 /20%);
+        background-color: #fff;
+        border-radius: 10px;
+        border: 2px solid #000;
+        -webkit-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        -moz-box-shadow: 3px 3px rgba(88, 57, 70, 0.75); 
+        box-shadow: 3px 3px rgba(88, 57, 70, 0.75);
+        transition: all 0.1s linear 0s; 
+    }
+
+    .form-label{
+        font-weight: 600;
+        float: left;
+        margin-left: 60px;
+    }
+
+    .form-control{
+        position: relative;  
+        padding: 3px 20px;
+        margin-top: 5px; 
+        margin-left: -25px;
+    }
+
+    .gender{
+        position: relative;
+        height: 15px;
+        width: 30px;
+        top: 2px;
+    }
+
+    #male, .male{
+        position: relative;
+        float: left;
+        left: 20px;
+        font-weight: 500;
+    }
+
+    #female, .female{
+        font-weight: 500;
+        margin-left: -5px;
+    }
+
+    .female{
+        margin-left: 0px;
+    }
+
+    input[type=radio]:checked + label:after {
+        opacity: 1;
+      }
+
+    #calendar{
+        width: 201.4px;
+        height: 22px;
+        margin-left: -25px;
+    }
+   
+    .upload_img{
+        margin-top: 5px;
+        margin-left: -20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed #000;
+        height: 200px;
+        width: 250px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    button{
+        margin-top: 10px;
+        padding: 8px 15px;
+        float: right;
+        position: relative;
+        left:-120px;
+        border-radius: 5px; 
+        background-color: #ef9fb3; 
+        -webkit-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        -moz-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        box-shadow: 0 3px rgba(88, 57, 70, 0.75);
+        transition: all 0.1s linear 0s; 
+        font-weight: 900;
+        color: #000;
+    }
+
+    .error-feedback{
+        max-height: 25px;
+        padding: 0px;
+        color: red;
+        font-size: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}

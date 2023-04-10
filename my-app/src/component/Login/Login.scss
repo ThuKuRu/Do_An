@@ -1,0 +1,87 @@
+.container-login{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 174, 174);
+    text-align: center;
+    .form-container-login{
+        width: 400px;
+        padding: 50px;
+        box-shadow: 0px 0px 21px rgb(0 0 0 /20%);
+        background-color: #fff;
+        border-radius: 10px;
+        border: 2px solid #000;
+        -webkit-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        -moz-box-shadow: 3px 3px rgba(88, 57, 70, 0.75); 
+        box-shadow: 3px 3px rgba(88, 57, 70, 0.75);
+        transition: all 0.1s linear 0s; 
+    }
+
+    .form-label-login{
+        font-weight: 600;
+        display: flex;
+        float: left;
+        margin-left: 50px;
+        top: -auto;
+    }
+
+    .form-control-login{
+        position: relative;  
+        padding: 3px 20px;
+        top: -7px;
+        margin-top: 15px; 
+        margin-left: 10px;
+    }
+
+    a{
+        font-weight: 600;
+        padding: 10px 120px;
+        color: #251abe;
+        border-bottom: 1px solid #615e5e;
+        margin-bottom: 20px;
+    }
+
+    button{
+        margin-top: 15px;
+        padding: 8px 15px;
+        float: right;
+        position: relative;
+        left: 1px;
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        border-radius: 5px; 
+        background-color: #ef9fb3; 
+        -webkit-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        -moz-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        box-shadow: 0 3px rgba(88, 57, 70, 0.75);
+        transition: all 0.1s linear 0s; 
+        font-weight: 900;
+        color: #000;
+    }
+
+    .error-feedback{
+        color: red;
+        display: inline-block;
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .register{
+        left: -50px;
+        margin-top: 50px;
+        font-weight: 900;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .submit-btn-login{
+        margin-top: 30px;
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        left: -45px;
+    }
+}
