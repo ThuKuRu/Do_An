@@ -18,20 +18,36 @@
         transition: all 0.1s linear 0s; 
     }
 
+   
+
     .form-label-login{
         font-weight: 600;
         display: flex;
         float: left;
+        padding: 5px;
         margin-left: 50px;
+        font-size: 18px;
         top: -auto;
+        margin-bottom: 5px;
     }
 
     .form-control-login{
-        position: relative;  
-        padding: 3px 20px;
-        top: -7px;
-        margin-top: 15px; 
-        margin-left: 10px;
+        position: relative; 
+        width: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 20px;
+        border: 2px solid rgb(153, 151, 151);
+        margin-bottom: 5px;
+    }
+
+    .component{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .validate{
+        height: 25px;
     }
 
     a{
@@ -43,7 +59,6 @@
     }
 
     button{
-        margin-top: 15px;
         padding: 8px 15px;
         float: right;
         position: relative;
@@ -63,10 +78,20 @@
 
     .error-feedback{
         color: red;
-        display: inline-block;
         font-size: 10px;
-        text-align: center;
-        justify-content: center;
+        display: flex;
+        float: right;
+        font-weight: 600;
+        margin-right: 20px;
+        
+    }
+    .form-control-error{
+        border: 2px solid red;
+        width: 200px;
+        padding: 5px;
+        margin-right: 20px;
+        border-radius: 5px;
+        margin-bottom: 5px;
     }
 
     .register{

@@ -1,0 +1,142 @@
+.container{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 174, 174);
+    text-align: center;
+
+    .form-container{        
+        width: 500px;
+        padding: 0px 50px 10px;
+        box-shadow: 0px 0px 21px rgb(0 0 0 /20%);
+        background-color: #fff;
+        border-radius: 10px;
+        border: 2px solid #000;
+        -webkit-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        -moz-box-shadow: 3px 3px rgba(88, 57, 70, 0.75); 
+        box-shadow: 3px 3px rgba(88, 57, 70, 0.75);
+        transition: all 0.1s linear 0s; 
+
+    }
+
+    .component{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-label{
+        font-weight: 600;
+        margin-left: 60px;
+        font-size: 16px;
+        padding: 2px 0px;
+    }
+
+    .form-control{
+        margin-right: 60px;
+        border-radius: 5px;
+        width: 230px;
+        padding: 5px;
+    }
+
+    .form-control-error{
+        margin-right: 60px;
+        border-radius: 5px;
+        width: 230px;
+        border: 2px solid red;
+        padding: 5px;
+    }
+
+    .component-gender{
+        font-weight: 600;
+        width: 385px;
+        text-align: center;
+        height: 28px;
+
+        .gender{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            input[type=radio]{
+                background-color: red;
+            }
+
+            .male-radio{
+               height: 20px;
+            }
+
+            .female-radio{
+                margin-left: 30px;
+                height: 20px;
+            }
+
+            label{
+                margin-right: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+    .upload_img{
+        margin-left: 120px;
+        .img{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed #000;
+            height: 200px;
+            width: 250px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .img-error{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 250px;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        .img-upload{
+            width: auto;
+            max-height: 200px;
+        }
+    }
+
+    button{
+     
+        padding: 8px 15px;
+        float: right;
+        position: relative;
+        left:-120px;
+        border-radius: 5px; 
+        background-color: #ef9fb3; 
+        -webkit-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        -moz-box-shadow: 0 3px rgba(88, 57, 70, 0.75); 
+        box-shadow: 0 3px rgba(88, 57, 70, 0.75);
+        transition: all 0.1s linear 0s; 
+        font-weight: 900;
+        color: #000;
+    }
+
+    .error-feedback{
+        color: red;
+        font-size: 10px;
+        font-weight: 600;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        margin-right: 60px;
+    }
+
+    .validate{
+        height: 20px;
+    }
+}
+
